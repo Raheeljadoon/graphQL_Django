@@ -2,7 +2,9 @@ import graphene
 from graphene_django import DjangoObjectType
 from .models import Category, Book, Grocery
 import decimal
+# from django.views.decorators.csrf import ensure_csrf_cookie
 
+# @csrf_failure
 class CategoryType(DjangoObjectType):
     class Meta: 
         model = Category
